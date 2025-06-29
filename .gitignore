@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.db
+.venv/
+.env
+.idea/
+.vscode/
+*.egg-info/
+streamlit_app.py.cache/
