@@ -1,11 +1,37 @@
-# Options Pricing Python Package
+# 📈 Options Pricing Python Package
 
-This package implements:
+A beginner-friendly Python package to calculate European & American **Call and Put option prices** using:
 
-- Black-Scholes and Binomial Models
-- Option Greeks: Delta, Gamma, Vega, Theta
-- Visualizations for option pricing
+- 🔹 Black-Scholes Model
+- 🔸 Binomial Tree Model
 
-## Installation
+Also includes:
+- 📊 Streamlit-based GUI
+- 💻 Command-line interface (CLI)
+- ⚙️ Greek calculations (coming soon!)
+
+---
+
+## 🚀 Features
+
+✅ Black-Scholes pricing  
+✅ Binomial Tree pricing (European & American)  
+✅ CLI support via `options-price`  
+✅ Streamlit GUI  
+✅ Modular folder structure  
+✅ Easy to extend
+
+
+---
+
+## 📊 Try the GUI
+
 ```bash
-pip install .
+streamlit run streamlit_app.py
+
+ Future Work
+✅ Add support for Monte Carlo model
+
+✅ Implement Greeks calculations
+
+✅ Interactive volatility surface plotting
