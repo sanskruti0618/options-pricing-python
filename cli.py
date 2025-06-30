@@ -1,4 +1,5 @@
 import argparse
+from options_pricing.models.monte_carlo import monte_carlo_option_price
 from options_pricing.models.black_scholes import black_scholes
 from options_pricing.models.binomial import binomial_tree
 
@@ -22,8 +23,14 @@ def main():
     elif args.model == 'binomial':
         N = args.N if args.N else 100
         price = binomial_tree(args.S, args.K, args.T, args.r, args.sigma, N=N, option_type=args.option, american=args.american)
+    elif args.model == "monte-carlo":
+        price = monte_carlo_option_price(
+            args.S, args.K, args.T, args.r, args.sigma, args.option.lower()
+    )
 
     print(f"{args.model.title()} {args.option.title()} Option Price: {price:.4f}")
 
 if __name__ == "__main__":
     main()
+
+
